@@ -1,0 +1,117 @@
+@import '@digi/arbetsformedlingen/dist/digi-arbetsformedlingen/digi-arbetsformedlingen.css';
+@import '@digi/arbetsformedlingen/dist/digi-arbetsformedlingen/fonts/src/fonts.css';
+
+* {
+  max-width: 100vw;
+  margin: 0;
+}
+
+:root {
+  --digi--container-width--small: 25vw;
+  --digi--margin--largest: 3rem;
+  --digi--color--text--link: rgb(1, 85, 106);
+  --digi--color--background--inverted-1: var(--digi--color--text--link);
+  --digi--color--background--inverted-2: #0181a1;
+  --digi--color--background--inverted-3: rgb(0, 37, 47);
+  --digi--color--background--inverted-5: #05ba83;
+  --digi--color--text--inverted: whitesmoke;
+  --digi--color--background--primary: whitesmoke;
+  --digi--color--background--tertiary: rgba(255, 255, 255, 0.94);
+  --digi--border-radius--primary: 1.5rem;
+  --digi--margin--text-small: 1.2rem
+}
+
+
+
+main,
+ul {
+  display: flex;
+  flex-direction: column;
+}
+main {
+  gap: var(--digi--container-gutter--largest);
+  width: 100vw;
+  min-height: 100vh;
+}
+/* Header */
+.sc-digi-header-h .digi-header__logo.sc-digi-header{
+  border-bottom: none;
+}
+
+
+/* Layout containers */
+.sc-digi-layout-container-h
+  .digi-layout-container--vertical-padding.sc-digi-layout-container {
+  background-color: var(--digi--color--background--primary);
+  padding: var(--digi--padding--small) var(--digi--padding--medium);
+  min-width: var(--digi--container-width--small);
+  margin: var(--digi--margin--largest);
+  border-radius: calc(
+    var(--digi--border-radius--primary) - var(--digi--padding--small)
+  );
+}
+.sc-digi-layout-block-h .digi-layout-block.sc-digi-layout-block .ads-block {
+  background-color: var(--digi--color--background--primary);
+}
+
+/* Buttons */
+.sc-digi-button-h .digi-button.sc-digi-button {
+  border-color: var(--digi--color--background--inverted-1);
+}
+.sc-digi-form-category-filter-h
+  .digi-form-category-filter--category--not-selected.sc-digi-form-category-filter {
+  --digi--button--color--text--primary--default: var(--digi--color--text--link);
+}
+.sc-digi-button-h .digi-button--icon-secondary.sc-digi-button,
+.sc-digi-button-h .digi-button--icon-secondary.sc-digi-button svg {
+  color: var(--digi--color--text--link);
+  border-color: var(--digi--color--background--primary);
+}
+
+/* Hover */
+.sc-digi-button-h .digi-button.sc-digi-button:hover {
+  background-color: var(--digi--color--background--inverted-2);
+  border-color: var(--digi--color--background--inverted-2);
+  color: var(--digi--color--text--inverted);
+}
+
+/* Cards */
+.sc-digi-info-card-multi-h {
+  border: none;
+  --digi--info-card-multi--border: var(--digi--border-width--complementary-2)
+    solid var(--digi--color--background--inverted-3);
+}
+
+.sc-digi-info-card-h .digi-info-card--primary.sc-digi-info-card {
+  background-color: var(--digi--color--background--inverted-5);
+}
+
+/* Links */
+.sc-digi-link-s > a:visited,
+.sc-digi-link-s > a:visited svg {
+  color: var(--digi--color--text--link);
+}
+
+#back-to-ads{
+  margin-bottom: var(--digi--margin--text-small);
+}
+
+.sc-digi-link-internal-h .digi-link-internal__icon.sc-digi-link-internal {
+
+    color:var(--digi--color--text--link)
+
+}
+
+/* Short ad description */
+.truncated-description {
+  display: -webkit-box;
+  -webkit-line-clamp: 2; 
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: normal;
+  margin-bottom: var(--digi--margin--text-small);
+}
+
+
+
